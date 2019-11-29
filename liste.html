@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+	<title>MyNetflix</title>
+	<style type="text/css">
+
+	</style>
+	<link rel="stylesheet"  href="includes/styles/styles.css" type="text/css" />
+</head>
+<body>
+<section id="topheader">
+	<header>
+		<div><img src="includes/images/logoN.png" alt="logo" width="140" /></div>
+		<div><p id="titre">Bienvenue sur Netflouse</p></div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="liste.html">Liste</a></li>
+			<li><a href="fiche.html">Fiche</a></li>
+		</ul>
+	</nav>
+	<section>
+		<table id="tbSeries">
+			<thead>
+				<tr>
+					<th>Nom Série</th>
+					<th>Année</th>
+					<th>Saisons</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+		<table id="tbSaisons">
+			<thead>
+				<tr>
+					<th>Numéro Saison</th>
+					<th>Année diffusion</th>
+					<th>Nb d'épisodes</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+		<table id="tbEpisodes">
+			<thead>
+				<tr>
+					<th>Numéro Episodes</th>
+					<th>Titre</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</section>
+</section>
+<script type="application/javascript" src="includes/scripts/common_functions.js"></script>
+<script type="application/javascript" src="includes/scripts/list_functions.js"></script>
+<script type="application/javascript">
+document.body.onload = function(){
+	var tableSeries = document.querySelector("#tbSeries>tbody");
+	getListeSeries(tableSeries);
+}
+
+
+
+</script>
+</body>
+</html>
